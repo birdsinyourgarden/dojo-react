@@ -1,16 +1,50 @@
-# React + Vite
+# Dojo React: Componentes, Props y Hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Ejercicio 1: Componente Simple
 
-Currently, two official plugins are available:
+Crea un componente `Saludo` que reciba un prop `nombre` y muestre un mensaje de saludo. Luego renderiza el componente en tu `App` con tu nombre.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ejercicio 2: Componente con Props Múltiples
 
-## React Compiler
+Crea un componente `Perfil` que reciba `nombre`, `edad` y `profesion` como props y muestre un mensaje que combine estas tres propiedades. Renderiza el componente varias veces con diferentes valores.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Ejercicio 3: Componente Anidado
 
-## Expanding the ESLint configuration
+Crea un componente `Tarjeta` que reciba `titulo` y `contenido` como props. Dentro de `Tarjeta`, renderiza un componente hijo `Contenido` que solo reciba la prop `contenido`. Renderiza varias tarjetas desde tu `App`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Ejercicio 4: Evento Click Simple
+
+Crea un componente `BotonAlerta` que muestre un botón. Al hacer clic, debe mostrar un `alert` con un mensaje de tu elección.
+
+## Ejercicio 5: Evento Input Simple
+
+Crea un componente `InputConsola` que tenga un input de texto y un botón. Al hacer clic en el botón, debe imprimir en la consola el valor actual del input.
+
+## Ejercicio 6: Lista de Props Estática
+
+Crea un componente `Fruta` que reciba una prop `nombre`. Luego crea un componente `ListaFrutas` que reciba un array de nombres de frutas y renderice varias instancias de `Fruta` mostrando cada fruta.
+
+## Ejercicio 7: useState Básico
+
+Crea un componente `Contador` con un estado `contador` inicializado en 0. Agrega un botón que incremente el contador en 1 cada vez que se haga clic y muestra el valor actual en pantalla.
+
+## Ejercicio 8: useState con Input
+
+Crea un componente `FormularioNombre` con un input para ingresar el nombre del usuario. Muestra debajo del input un mensaje en tiempo real que diga: `"Hola, {nombre}"` mientras se escribe.
+
+## Ejercicio 9: Lista Dinámica con Props
+ 
+Crea un componente `Tarea` que reciba una prop `titulo`. Luego crea un componente `ListaTareas` que reciba un array de tareas y renderice varias `Tarea`. Opcional: agrega un botón para eliminar tareas de la lista usando `useState`.
+
+## Ejercicio 10: Formulario con react-hook-form
+
+Crea un componente `LoginForm` con campos `email` y `password`. Usa `useForm` para controlar el formulario. Al enviar, imprime los datos en la consola. Extra: añade validaciones simples (email requerido y password mínimo 6 caracteres).
+
+
+
+## Atajos extension ES7 + React
+
+rafce componente funcional con arrow function
+rfc componente funcional
+rfce componente + export
+useState hook useState
