@@ -9,6 +9,7 @@ import { ListaFruta } from './components/Fruta'
 import Contador from './components/Contador'
 import FormularioNombre from './components/FormularioNombre'
 import { ListaTareas } from './components/Tarea'
+import LoginForm from './components/LoginForm'
 
 const frutas = ["Manzana", "Plátano", "Naranja"];
 
@@ -24,5 +25,6 @@ createRoot(document.getElementById('root')).render(
     <Contador />
     <FormularioNombre />
     <ListaTareas />
+    <LoginForm />
   </StrictMode>,
 )
